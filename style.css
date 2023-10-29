@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top {
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.workingarea {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    padding: 0vh 5vw;
+
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    pointer-events: all;
+}
+
+.left ul,
+.right ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left ul,
+.right ul li {
+    font-size: 1vw;
+}
+
+.left img {
+    height: 90px;
+    width: 100px;
+}
+
+.hero {
+    width: 100%;
+    padding: 0vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left .elem {
+    height: 15vh;
+    overflow: hidden;
+    position: relative;
+}
+.hero-left .elem h1:nth-child(1){
+    top: 0%;
+}
+.hero-left .elem h1 {
+    font-family: "Kajiro";
+    font-size: 9vw;
+    font-weight: 100;
+    line-height: 0.89;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.hero-left button {
+    padding: 1vh 3vw;
+    font-size: 2.5vw;
+    font-family: "Kajiro";
+    cursor: pointer;
+    font-weight: 500;
+    pointer-events: all;
+    margin-top: 2vh;
+}
